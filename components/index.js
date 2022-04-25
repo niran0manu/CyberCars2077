@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text,ImageBackground} from 'react-native';
-import styles from './styles'
+import styles from './styles';
+import Button from './Buttons/button.js';
 
 
 
@@ -13,8 +14,10 @@ const CarItem =(props) => {
         <View style = {styles.titles}>
           <Text style = {styles.title}> Outlaw GTS </Text>
           <Text style = {styles.subtitle}>  Starting from €$ 69,999 </Text>
-
+          
         </View>
+        <Button/>
+        <Button/>
 
       </View>
 
