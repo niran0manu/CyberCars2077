@@ -16,8 +16,8 @@ const CarItem =(props) => {
           <Text style = {styles.subtitle}>  Starting from €$ 69,999 </Text>
           
         </View>
-        <Button/>
-        <Button/>
+        <Button type= "primary" />
+        <Button  type= "secondary"/>
 
       </View>
 
