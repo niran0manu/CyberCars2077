@@ -7,8 +7,8 @@ import styles from './buttonStyles';
 
 const Button =(props) => {
 
-  const type = props.type;
-  console.log(type);
+
+  const {type, content, onPress} = props;
 
   const backgroundColor = type === "primary" ? '#fcee09' : '#ff003c'; 
   const textColor = type === "primary" ? 'Black' : 'white'; 
@@ -19,7 +19,11 @@ const Button =(props) => {
       <View>
           <View style={styles.btnContainer}>
 
-            <Pressable style={[styles.button, { backgroundColor: backgroundColor}]} onPress={() => console.log('buttn active')}><Text style={[styles.buttonText,{color:textColor}]}>Configure Your's Now</Text></Pressable>
+            <Pressable style={[styles.button, { backgroundColor: backgroundColor}]} onPress={() => onPress()}>
+              <Text style={[styles.buttonText,{color:textColor}]}>
+               {content} 
+              </Text>
+            </Pressable>
 
             
         </View>

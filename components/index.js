@@ -6,18 +6,26 @@ import Button from './Buttons/button.js';
 
 
 const CarItem =(props) => {
+
+  const {title, subtitle, image, price, hp,acc } = props;
+
   return (
     <View style={styles.carContainer}>
 
-        <ImageBackground source={require('../assets/images/GTS.png')} resizeMode="contain" style={styles.image}></ImageBackground>
+        <ImageBackground source={require('../assets/images/GTS.png')} resizeMode="contain" style={styles.image}></ImageBackground> // add the carCarousel component here.
 
         <View style = {styles.titles}>
-          <Text style = {styles.title}> Outlaw GTS </Text>
-          <Text style = {styles.subtitle}>  Starting from €$ 69,999 </Text>
+          <Text style = {styles.title}> {title}</Text>
+          <Text style = {styles.subtitle}> {subtitle} <Text style = {styles.price}>€$ {price}</Text> </Text>
+          <Text style = {styles.specs}>{hp} hp, 0-60 mph* in  {acc}s</Text>
           
         </View>
-        <Button type= "primary" />
-        <Button  type= "secondary"/>
+
+        <View style = {styles.buttons} >
+          <Button type= "primary"  content={"Configure Your's Now"} onPress={() => { console.log("Configuration has been initiated")}}/>
+          <Button  type= "secondary" content={"Book a Test Drive"} onPress={() => { console.log("Your car will arrive soon")}}/>
+        </View>
+        
 
       </View>
 

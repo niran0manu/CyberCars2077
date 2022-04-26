@@ -8,9 +8,16 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      <CarItem/> 
-
       
+      <CarItem
+        title={"Outlaw GTS"}
+        subtitle={"Starting from"}
+        image = {require('./assets/images/GTS.png')}
+        price = {"59,999"}
+        hp ={"734"}
+        acc={"2.99"}      
+      /> 
+  
       <StatusBar style="auto" />
     </View>
   );

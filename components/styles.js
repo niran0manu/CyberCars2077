@@ -28,9 +28,29 @@ const styles = StyleSheet.create({
       },
       subtitle: {
         fontSize: 18,
+        color:'white',
+        fontWeight:'300',
+    
+    
+      },
+
+      price:{
+        fontSize: 22,       
         color:'#dc143c',
-    
-    
+      },
+
+      specs:{
+        fontSize: 16,
+        color:'lightblue',
+        
+
+      },
+
+      buttons:{
+        position: 'absolute',
+        bottom :70,
+        width:'100%',
+
       },
 
 
