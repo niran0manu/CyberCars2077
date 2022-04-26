@@ -24,4 +24,4 @@ Clone and install
 ## 🚀 About Me (Niranjan)
 Hello, there I'm Niranjan a full stack developer and student at the University of Turku.
 React fanboy, Team player, Archnemesis of CSS, overall a pretty chill person.😄
-Funfact about me: {Insert fun fact here}
+Funfact about me: I am not that Fun.
