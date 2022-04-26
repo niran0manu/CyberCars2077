@@ -7,15 +7,15 @@ import Button from './Buttons/button.js';
 
 const CarItem =(props) => {
 
-  const {title, subtitle, image, price, hp,acc } = props;
+  const {title, subtitle, image, price, hp,acc } = props.car;
 
   return (
     <View style={styles.carContainer}>
 
-        <ImageBackground source={require('../assets/images/GTS.png')} resizeMode="contain" style={styles.image}></ImageBackground> // add the carCarousel component here.
+        <ImageBackground source={image} resizeMode="contain" style={styles.image}></ImageBackground> 
 
         <View style = {styles.titles}>
-          <Text style = {styles.title}> {title}</Text>
+          <Text style = {styles.title} > {title} </Text> 
           <Text style = {styles.subtitle}> {subtitle} <Text style = {styles.price}>€$ {price}</Text> </Text>
           <Text style = {styles.specs}>{hp} hp, 0-60 mph* in  {acc}s</Text>
           

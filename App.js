@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View , ImageBackground } from 'react-native';
-import CarItem from './components/index.js';
+import CarCatalogue from './components/Cars/carCatalogue.js';
+import Header from './components/Header/header';
 
 
 
@@ -8,15 +10,8 @@ export default function App() {
   return (
     <View style={styles.container}>
 
-      
-      <CarItem
-        title={"Outlaw GTS"}
-        subtitle={"Starting from"}
-        image = {require('./assets/images/GTS.png')}
-        price = {"59,999"}
-        hp ={"734"}
-        acc={"2.99"}      
-      /> 
+      <Header />
+      <CarCatalogue/> 
   
       <StatusBar style="auto" />
     </View>

@@ -11,7 +11,7 @@ const Button =(props) => {
   const {type, content, onPress} = props;
 
   const backgroundColor = type === "primary" ? '#fcee09' : '#ff003c'; 
-  const textColor = type === "primary" ? 'Black' : 'white'; 
+  const textColor = type === "primary" ? '#000000' : '#fff'; 
 
   return (
     
