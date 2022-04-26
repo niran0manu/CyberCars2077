@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <View style={styles.container}>
       <Image style={styles.logo} source={require('../../assets/images/herrea.png')} />
-      {/* <Image style={styles.menu} source={require('../../assets/images/menu.png')} /> */}
+      {/* <Image style={styles.menu} source={require('../../assets/images/menu.png')} /> Find the better menu  */}
     </View>
   );
 };
